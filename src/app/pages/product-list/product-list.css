@@ -1,15 +1,14 @@
-/* Toolbar Layout */
 .example-spacer {
   flex: 1 1 auto;
 }
 
 .header-button-row {
   display: flex;
-  gap: 12px; /* This creates the space between your buttons */
+  gap: 12px;
   align-items: center;
 }
 
-/* Main Container */
+
 .main-body {
   padding: 20px;
   max-width: 1200px;
@@ -20,33 +19,33 @@
   width: 100%;
 }
 
-/* Table Responsiveness */
+
 .table-container {
   width: 100%;
-  overflow-x: auto; /* Enables horizontal scroll on small screens */
+  overflow-x: auto;
   margin-top: 15px;
   border-radius: 8px;
 }
 
 table {
   width: 100%;
-  min-width: 650px; /* Prevents columns from squishing too much */
+  min-width: 650px;
 }
 
-/* Alignment for icons in the Action column */
+
 .action-buttons {
   display: flex;
   gap: 4px;
 }
 
-/* --- Mobile Responsiveness --- */
+
 @media (max-width: 768px) {
   .app-toolbar {
     height: auto !important;
     padding: 15px 10px;
   }
 
-  /* Stack the toolbar content vertically on very small screens */
+
   @media (max-width: 500px) {
     .app-toolbar {
       flex-direction: column;
@@ -61,7 +60,7 @@ table {
       gap: 8px;
     }
 
-    /* Make buttons slightly smaller on mobile */
+
     .header-button-row button {
       font-size: 12px;
       padding: 0 10px;
