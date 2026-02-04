@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Rohini",
+      "email": "test@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "79f0",
+      "name": "Rohini Phadtare",
+      "email": "rp@gmail.com",
+      "password": "111111"
+    },
+    {
+      "id": "59f8",
+      "name": "aaa",
+      "email": "a@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "0623",
+      "name": "Gayatri Mali",
+      "email": "gmali@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "products": [
+    {
+      "id": "4",
+      "name": "HP Mouse",
+      "price": 500,
+      "category": "Accessories"
+    },
+    {
+      "id": "5",
+      "name": "Keyboard",
+      "price": 1200,
+      "category": "Accessories"
+    },
+    {
+      "id": "2ea7",
+      "name": "Samsung",
+      "price": "15000",
+      "category": "Mobile"
+    },
+    {
+      "id": "0689",
+      "name": "Nothing",
+      "price": "30000",
+      "category": "Mobile"
+    }
+  ]
+}
