@@ -5,37 +5,10 @@
       "name": "Rohini",
       "email": "test@gmail.com",
       "password": "1234"
-    },
-    {
-      "id": "79f0",
-      "name": "Rohini Phadtare",
-      "email": "rp@gmail.com",
-      "password": "111111"
-    },
-    {
-      "id": "59f8",
-      "name": "aaa",
-      "email": "a@gmail.com",
-      "password": "123456"
-    },
-    {
-      "id": "0623",
-      "name": "Gayatri Mali",
-      "email": "gmali@gmail.com",
-      "password": "123456"
     }
   ],
   "products": [
     {
-<<<<<<< HEAD
-=======
-      "name": "Hp Laptop",
-      "price": 60000,
-      "category": "Laptophh",
-      "id": "3"
-    },
-    {
->>>>>>> da613fa8b1cd79a0137dd58c041f27da24aedfdb
       "id": "4",
       "name": "HP Mouse",
       "price": 500,
@@ -52,15 +25,12 @@
       "name": "Samsung",
       "price": "15000",
       "category": "Mobile"
-<<<<<<< HEAD
     },
     {
       "id": "0689",
       "name": "Nothing",
       "price": "30000",
       "category": "Mobile"
-=======
->>>>>>> da613fa8b1cd79a0137dd58c041f27da24aedfdb
     }
   ]
 }
