@@ -1,73 +1,40 @@
-<div mat-dialog-title>Product Form</div>
+<div mat-dialog-title class="dialog-header">
+  {{ data ? 'Update Product' : 'Add Product' }}
+</div>
 
 <form [formGroup]="addProductForm" (ngSubmit)="onFormSubmit()">
   <div mat-dialog-content class="content">
+    
     <div class="row">
       <mat-form-field appearance="outline">
         <mat-label>Name</mat-label>
         <input matInput type="text" placeholder="Iphone" formControlName="name" />
-        <mat-error
-          *ngIf="
-            f['name'].invalid &&
-            (f['name'].dirty || f['name'].touched) &&
-            f['name'].errors?.['required']
-          "
-        >
-          Name is required
-        </mat-error>
-
-        <mat-error *ngIf="f['name'].errors?.['minlength']">
-          Minimum 3 characters required
-        </mat-error>
-
-        <mat-error *ngIf="f['name'].errors?.['maxlength']">
-          Maximum 30 characters allowed
-        </mat-error>
+        <mat-error *ngIf="f['name'].errors?.['required']">Name is required</mat-error>
+        <mat-error *ngIf="f['name'].errors?.['minlength']">Minimum 3 characters required</mat-error>
+        <mat-error *ngIf="f['name'].errors?.['maxlength']">Maximum 30 characters allowed</mat-error>
       </mat-form-field>
 
-      <!-- //price -->
       <mat-form-field appearance="outline">
         <mat-label>Price</mat-label>
         <input matInput type="text" placeholder="60,000" formControlName="price" />
-        <mat-error
-          *ngIf="
-            f['price'].invalid &&
-            (f['price'].dirty || f['price'].touched) &&
-            f['price'].errors?.['required']
-          "
-        >
-          Price is required
-        </mat-error>
-
-        <mat-error
-          *ngIf="
-            f['price'].invalid &&
-            (f['price'].dirty || f['price'].touched) &&
-            f['price'].errors?.['pattern']
-          "
-        >
-          Only numbers allowed
-        </mat-error>
+        <mat-error *ngIf="f['price'].errors?.['required']">Price is required</mat-error>
+        <mat-error *ngIf="f['price'].errors?.['pattern']">Only numbers allowed</mat-error>
       </mat-form-field>
     </div>
 
-    <!-- //category -->
-    <mat-form-field appearance="outline">
-      <mat-label>Category</mat-label>
-      <input matInput type="text" placeholder="Mobile" formControlName="category" />
-      <mat-error
-        *ngIf="
-          f['category'].invalid &&
-          (f['category'].dirty || f['category'].touched) &&
-          f['category'].errors?.['required']
-        "
-      >
-        Category is required
-      </mat-error>
-    </mat-form-field>
+    <div class="full-row">
+      <mat-form-field appearance="outline">
+        <mat-label>Category</mat-label>
+        <input matInput type="text" placeholder="Mobile" formControlName="category" />
+        <mat-error *ngIf="f['category'].errors?.['required']">Category is required</mat-error>
+      </mat-form-field>
+    </div>
   </div>
+
   <div mat-dialog-actions class="action">
-    <button mat-raised-button color="primary" type="submit"  [disabled]="addProductForm.invalid">{{ data ? 'Update' : 'Save' }}</button>
-    <button mat-raised-button [mat-dialog-close]="false">Cancel</button>
+    <button mat-raised-button color="primary" type="submit" [disabled]="addProductForm.invalid">
+      {{ data ? 'Update' : 'Save' }}
+    </button>
+    <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
   </div>
 </form>

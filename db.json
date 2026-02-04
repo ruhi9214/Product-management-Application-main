@@ -65,13 +65,6 @@
       "userId": 2
     },
     {
-      "id": "ef45",
-      "name": "HP Laptop",
-      "price": "30000",
-      "category": "Laptop",
-      "userId": null
-    },
-    {
       "id": "91f1",
       "name": "Vivo",
       "price": "30000",
@@ -83,6 +76,13 @@
       "name": "i phone",
       "price": "6000000",
       "category": "mobile",
+      "userId": null
+    },
+    {
+      "id": "059e",
+      "name": "Iphone",
+      "price": "30000",
+      "category": "Mobile",
       "userId": null
     }
   ],

@@ -1,128 +1,74 @@
-/* =====================================================
-   GLOBAL LAYOUT
-===================================================== */
-
-.main-body {
-  padding: 16px;
-  margin: auto;
-  max-width: 1245px;
-
-  /* ⭐ MOST IMPORTANT → enables horizontal scroll */
-  overflow-x: auto;
-}
-
-
-/* =====================================================
-   TOOLBAR
-===================================================== */
-
+/* Toolbar Layout */
 .example-spacer {
   flex: 1 1 auto;
 }
 
-mat-toolbar {
+.header-button-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px; /* This creates the space between your buttons */
+  align-items: center;
 }
 
-mat-toolbar button {
-  margin-left: 8px;
+/* Main Container */
+.main-body {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-
-/* =====================================================
-   FILTER FIELD
-===================================================== */
-
-.main-body mat-form-field {
+.full-width {
   width: 100%;
-  margin-bottom: 14px;
 }
 
-
-/* =====================================================
-   TABLE (DESKTOP DEFAULT)
-===================================================== */
-
-table.mat-elevation-z8 {
+/* Table Responsiveness */
+.table-container {
   width: 100%;
-  min-width: 750px;   /* prevents break, forces scroll */
+  overflow-x: auto; /* Enables horizontal scroll on small screens */
+  margin-top: 15px;
+  border-radius: 8px;
 }
 
-/* better spacing */
-th, td {
-  padding: 12px 10px !important;
+table {
+  width: 100%;
+  min-width: 650px; /* Prevents columns from squishing too much */
 }
 
-td button {
-  margin-right: 6px;
+/* Alignment for icons in the Action column */
+.action-buttons {
+  display: flex;
+  gap: 4px;
 }
 
-
-/* =====================================================
-   MOBILE RESPONSIVE
-===================================================== */
-
-@media (max-width: 1024px) {
-
-  table {
-    font-size: 14px;
-  }
-}
-
-
-/* ================= MOBILE ================= */
-
+/* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
+  .app-toolbar {
+    height: auto !important;
+    padding: 15px 10px;
+  }
 
-  /* smaller padding */
+  /* Stack the toolbar content vertically on very small screens */
+  @media (max-width: 500px) {
+    .app-toolbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+    .header-button-row {
+      width: 100%;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* Make buttons slightly smaller on mobile */
+    .header-button-row button {
+      font-size: 12px;
+      padding: 0 10px;
+    }
+  }
+
   .main-body {
     padding: 10px;
-  }
-
-  /* stack toolbar vertically */
-  mat-toolbar {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  /* full width buttons */
-  mat-toolbar button {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  /* compact table */
-  table {
-    font-size: 13px;
-  }
-
-  th, td {
-    padding: 8px 6px !important;
-  }
-
-  /* smaller icons */
-  td button {
-    transform: scale(0.9);
-  }
-
-  /* paginator responsive */
-  mat-paginator {
-    font-size: 12px;
-  }
-}
-
-
-/* ================= EXTRA SMALL MOBILE ================= */
-
-@media (max-width: 480px) {
-
-  table {
-    font-size: 12px;
-  }
-
-  th, td {
-    padding: 6px 4px !important;
   }
 }

@@ -1,12 +1,50 @@
-
- .row{
-    display: flex;
-    gap: 10px;
+/* Container padding */
+.content {
+  padding-top: 15px !important;
 }
 
-.action{
-    padding: 0px 25px 20px;
-    button{
-        flex: 1;
-    }
-} 
+/* Base: Stack fields vertically for Mobile */
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.full-row {
+  width: 100%;
+}
+
+/* Laptop & Tablet: Side-by-side layout */
+@media (min-width: 600px) {
+  .row {
+    flex-direction: row;
+    gap: 15px; /* Spacing between Name and Price */
+  }
+}
+
+/* Ensure Form Fields always fill their container */
+mat-form-field {
+  width: 100%;
+}
+
+/* Button Layout */
+.action {
+  padding: 10px 24px 25px !important;
+  display: flex;
+  gap: 12px; /* Space between Save and Cancel */
+  justify-content: space-between;
+}
+
+.action button {
+  flex: 1; /* Both buttons take equal width */
+  margin: 0 !important; /* Reset default Material margins */
+  height: 45px; /* Taller buttons for easier touch on mobile */
+}
+
+/* Extra small mobile adjustments */
+@media (max-width: 400px) {
+  .action {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
