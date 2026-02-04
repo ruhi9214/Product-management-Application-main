@@ -8,7 +8,6 @@
   align-items: center;
 }
 
-
 .main-body {
   padding: 20px;
   max-width: 1200px;
@@ -19,19 +18,18 @@
   width: 100%;
 }
 
-
 .table-container {
   width: 100%;
-  overflow-x: auto;
+  overflow-x: auto; 
   margin-top: 15px;
   border-radius: 8px;
+  -webkit-overflow-scrolling: touch; 
 }
 
 table {
   width: 100%;
-  min-width: 650px;
+  min-width: 700px; 
 }
-
 
 .action-buttons {
   display: flex;
@@ -39,35 +37,40 @@ table {
 }
 
 
+
 @media (max-width: 768px) {
   .app-toolbar {
-    height: auto !important;
-    padding: 15px 10px;
-  }
-
-
-  @media (max-width: 500px) {
-    .app-toolbar {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 15px;
-    }
-
-    .header-button-row {
-      width: 100%;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-
-    .header-button-row button {
-      font-size: 12px;
-      padding: 0 10px;
-    }
+    height: auto !important; 
+    padding: 10px;
   }
 
   .main-body {
     padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header-button-row {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+    gap: 8px;
+  }
+
+  .header-button-row button {
+    font-size: 12px;
+    padding: 0 8px;
+  }
+
+ 
+  .app-toolbar span {
+    font-size: 16px;
+    font-weight: 500;
   }
 }

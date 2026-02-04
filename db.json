@@ -32,58 +32,59 @@
   "products": [
     {
       "id": "8",
-      "name": "Apple iPhone 17 pro",
+      "name": "Apple iPhone 17 Pro",
       "price": "90000",
       "category": "Mobile",
-      "userId": 4
-    },
-    {
-      "id": "9",
-      "name": "Dell Laptop",
-      "price": "55000",
-      "category": "Laptop",
-      "userId": 5
-    },
-    {
-      "name": "Samsung s24",
-      "price": "10000",
-      "category": "Mobile",
-      "id": "9792"
+      "userId": "1"
     },
     {
       "id": "b19b",
       "name": "Dell V23",
       "price": "40000",
       "category": "Laptop",
-      "userId": 2
+      "userId": "2"
     },
     {
       "id": "26ac",
-      "name": "Nothiing",
+      "name": "Nothing Phone",
       "price": "20000",
       "category": "Mobile",
-      "userId": 2
-    },
-    {
-      "id": "91f1",
-      "name": "Vivo",
-      "price": "30000",
-      "category": "Mobile",
-      "userId": 1
+      "userId": "2"
     },
     {
       "id": "1e87",
-      "name": "i phone",
-      "price": "6000000",
-      "category": "mobile",
-      "userId": null
+      "name": "HP Pavilion Laptop",
+      "price": "62000",
+      "category": "Laptop",
+      "userId": "3"
     },
     {
-      "id": "059e",
-      "name": "Iphone",
-      "price": "30000",
+      "id": "p103",
+      "name": "Sony Headphones",
+      "price": "8000",
+      "category": "Accessories",
+      "userId": "1"
+    },
+    {
+      "id": "p104",
+      "name": "Boat Smart Watch",
+      "price": "3500",
+      "category": "Accessories",
+      "userId": "3"
+    },
+    {
+      "id": "p105",
+      "name": "Lenovo ThinkPad X1",
+      "price": "72000",
+      "category": "Laptop",
+      "userId": "1"
+    },
+    {
+      "id": "6cde",
+      "name": "Iphone 17",
+      "price": "10000",
       "category": "Mobile",
-      "userId": null
+      "userId": 3
     }
   ],
   "vendors": [
