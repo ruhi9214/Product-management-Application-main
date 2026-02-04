@@ -9,25 +9,25 @@
   ],
   "products": [
     {
-      "id": "4",
+      "id": "1",
       "name": "HP Mouse",
       "price": 500,
       "category": "Accessories"
     },
     {
-      "id": "5",
+      "id": "2",
       "name": "Keyboard",
       "price": 1200,
       "category": "Accessories"
     },
     {
-      "id": "2ea7",
+      "id": "3",
       "name": "Samsung",
       "price": "15000",
       "category": "Mobile"
     },
     {
-      "id": "0689",
+      "id": "4",
       "name": "Nothing",
       "price": "30000",
       "category": "Mobile"
