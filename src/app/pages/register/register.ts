@@ -62,7 +62,7 @@ export class Register {
       next: (res:any) => {
         this.loading = false;
         this.snack.open('Registration Successful ✅', 'Close', { duration: 2000 });
-        this.router.navigate(['/login']); // navigate to login page after register
+        this.router.navigate(['/login']); 
       },
       error: (err:any) => {
         this.loading = false;

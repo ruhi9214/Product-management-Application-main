@@ -1,6 +1,3 @@
-/* =========================
-   PAGE BACKGROUND
-========================= */
 .wrapper {
   height: 100vh;
   display: flex;
@@ -9,15 +6,10 @@
 
   padding: 20px;
 
-  /* modern soft gray */
   background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
-  font-family: "Inter", "Segoe UI", sans-serif;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
 }
 
-
-/* =========================
-   LOGIN CARD
-========================= */
 .login-card {
   width: 100%;
   max-width: 400px;
@@ -31,10 +23,6 @@
     0 5px 12px rgba(0, 0, 0, 0.05);
 }
 
-
-/* =========================
-   HEADINGS
-========================= */
 .heading {
   text-align: center;
   font-size: 24px;
@@ -50,56 +38,40 @@
   margin-bottom: 30px;
 }
 
-
-/* =========================
-   FORM
-========================= */
 .full {
   width: 100%;
   margin-bottom: 20px;
 }
 
-
-/* =========================
-   MATERIAL INPUT LOOK
-========================= */
-
-/* soft input background */
 ::ng-deep .mat-mdc-form-field {
   background: #f9fafb;
   border-radius: 12px;
 }
 
-/* remove harsh borders */
 ::ng-deep .mdc-notched-outline__leading,
 ::ng-deep .mdc-notched-outline__notch,
 ::ng-deep .mdc-notched-outline__trailing {
   border-color: #e5e7eb !important;
 }
 
-/* focus color */
 ::ng-deep .mdc-text-field--focused .mdc-notched-outline__leading,
 ::ng-deep .mdc-text-field--focused .mdc-notched-outline__notch,
 ::ng-deep .mdc-text-field--focused .mdc-notched-outline__trailing {
   border-color: #6366f1 !important;
 }
 
-/* input padding */
 ::ng-deep .mat-mdc-input-element {
   padding: 14px 12px;
 }
 
-
-/* =========================
-   BUTTON
-========================= */
 button[mat-raised-button] {
   height: 46px;
   border-radius: 12px;
   font-weight: 600;
   letter-spacing: 0.4px;
 
-  background: #6366f1 !important; /* professional indigo */
+  background: #6366f1 !important;
+  /* professional indigo */
   color: white !important;
 
   transition: 0.2s;
@@ -114,10 +86,6 @@ button[mat-raised-button]:disabled {
   opacity: 0.7;
 }
 
-
-/* =========================
-   REGISTER LINK
-========================= */
 .register-link {
   text-align: center;
   margin-top: 18px;
@@ -134,26 +102,20 @@ button[mat-raised-button]:disabled {
   text-decoration: underline;
 }
 
-
-/* =========================
-   SPINNER CENTER
-========================= */
 mat-spinner {
   margin: auto;
 }
-/* Make mat-error text red */
+
 mat-error {
   color: red;
   font-size: 13px;
   margin-top: 2px;
 }
 
-/* Optional: add red border to the input when invalid */
 mat-form-field.mat-form-field-invalid .mat-input-element {
   border-bottom-color: red !important;
 }
 
-/* Optional: full-width for form fields */
 .full {
   width: 100%;
 }
