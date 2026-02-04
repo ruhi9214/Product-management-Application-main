@@ -2,41 +2,114 @@
   "users": [
     {
       "id": "1",
-      "name": "Rohini",
-      "email": "test@gmail.com",
-      "password": "1234"
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "123",
+      "role": "ADMIN"
     },
     {
-      "id": "73ac",
-      "name": "Rohini Phadtare",
-      "email": "rohiniphadtare9202@gmail.com",
-      "password": "123456"
+      "id": "2",
+      "name": "Rohini",
+      "email": "rohini@gmail.com",
+      "password": "123",
+      "role": "USER"
+    },
+    {
+      "id": "3",
+      "name": "TestUser",
+      "email": "user@gmail.com",
+      "password": "123",
+      "role": "USER"
+    },
+    {
+      "id": "ce9a",
+      "name": "Gayatri Mali",
+      "email": "garun@gmail.com",
+      "password": "123456",
+      "role": "USER"
     }
   ],
   "products": [
     {
-      "name": "Keyboard Mouse",
-      "price": 1200,
-      "category": "Accessories",
-      "id": "2"
+      "id": "8",
+      "name": "Apple iPhone 17 pro",
+      "price": "90000",
+      "category": "Mobile",
+      "userId": 4
+    },
+    {
+      "id": "9",
+      "name": "Dell Laptop",
+      "price": "55000",
+      "category": "Laptop",
+      "userId": 5
+    },
+    {
+      "name": "Samsung s24",
+      "price": "10000",
+      "category": "Mobile",
+      "id": "9792"
+    },
+    {
+      "id": "b19b",
+      "name": "Dell V23",
+      "price": "40000",
+      "category": "Laptop",
+      "userId": 2
+    },
+    {
+      "id": "26ac",
+      "name": "Nothiing",
+      "price": "20000",
+      "category": "Mobile",
+      "userId": 2
+    },
+    {
+      "id": "ef45",
+      "name": "HP Laptop",
+      "price": "30000",
+      "category": "Laptop",
+      "userId": null
+    },
+    {
+      "id": "91f1",
+      "name": "Vivo",
+      "price": "30000",
+      "category": "Mobile",
+      "userId": 1
+    },
+    {
+      "id": "1e87",
+      "name": "i phone",
+      "price": "6000000",
+      "category": "mobile",
+      "userId": null
+    }
+  ],
+  "vendors": [
+    {
+      "id": "1",
+      "name": "VendorOne",
+      "email": "vendor1@gmail.com",
+      "company": "Vendor One Pvt Ltd",
+      "phone": "123-456-7890",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "name": "VendorTwo",
+      "email": "vendor2@gmail.com",
+      "company": "Vendor Two LLC",
+      "phone": "987-654-3210",
+      "status": "inactive"
     },
     {
       "id": "3",
-      "name": "Samsung",
-      "price": "15000",
-      "category": "Mobile"
-    },
-    {
-      "id": "4",
-      "name": "Nothing",
-      "price": "30000",
-      "category": "Mobile"
-    },
-    {
-      "id": "3a92",
-      "name": "Iphone 16",
-      "price": "70000",
-      "category": "Mobile"
+      "name": "VendorThree",
+      "email": "vendor3@gmail.com",
+      "company": "Vendor Three Corp",
+      "phone": "555-123-4567",
+      "status": "active"
     }
   ]
 }

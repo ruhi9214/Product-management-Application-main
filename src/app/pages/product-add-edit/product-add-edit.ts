@@ -57,6 +57,8 @@ export class ProductAddEdit implements OnInit {
       if (this.data) {
         this.Pservice.update(this.data.id, this.addProductForm.value).subscribe({
           next: (val: any) => {
+            console.log(val);
+            
             this.snack.openSnackBar("Product Detail Updated !!")
             this.dialogref.close(true);
           },

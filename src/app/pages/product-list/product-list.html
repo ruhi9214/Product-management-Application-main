@@ -1,6 +1,13 @@
 <mat-toolbar color="primary">
   <span>Product Management Application</span>
   <span class="example-spacer"></span>
+  
+
+  <!-- //for vendor list -->
+  <button mat-raised-button color="accent" *ngIf="auth.isAdmin()" routerLink="/admin">
+Vendor List
+  </button>
+
   <button mat-raised-button  *ngIf="auth.isLoggedIn()" (click)="openAddEditProductForm()" >Add Product</button>
     <button mat-raised-button color="warn" *ngIf="auth.isLoggedIn()" (click)="logout()" >
     Logout
@@ -47,7 +54,7 @@
         <mat-icon>edit</mat-icon>
       </button>
 
-       <button mat-icon-button color="warn" (click)="deleteProduct(element.id)">
+       <button mat-icon-button color="warn"   (click)="deleteProduct(element.id)">
         <mat-icon>delete</mat-icon>
       </button>
     </td>

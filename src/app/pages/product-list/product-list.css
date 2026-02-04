@@ -1,13 +1,128 @@
+/* =====================================================
+   GLOBAL LAYOUT
+===================================================== */
+
+.main-body {
+  padding: 16px;
+  margin: auto;
+  max-width: 1245px;
+
+  /* ⭐ MOST IMPORTANT → enables horizontal scroll */
+  overflow-x: auto;
+}
+
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
 .example-spacer {
   flex: 1 1 auto;
 }
 
-.main-body {
-  padding-top: 20px;
-  margin: 0 auto;
-  max-width: 1245px;
+mat-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
-  mat-form-field {
+mat-toolbar button {
+  margin-left: 8px;
+}
+
+
+/* =====================================================
+   FILTER FIELD
+===================================================== */
+
+.main-body mat-form-field {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+
+/* =====================================================
+   TABLE (DESKTOP DEFAULT)
+===================================================== */
+
+table.mat-elevation-z8 {
+  width: 100%;
+  min-width: 750px;   /* prevents break, forces scroll */
+}
+
+/* better spacing */
+th, td {
+  padding: 12px 10px !important;
+}
+
+td button {
+  margin-right: 6px;
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVE
+===================================================== */
+
+@media (max-width: 1024px) {
+
+  table {
+    font-size: 14px;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  /* smaller padding */
+  .main-body {
+    padding: 10px;
+  }
+
+  /* stack toolbar vertically */
+  mat-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* full width buttons */
+  mat-toolbar button {
     width: 100%;
+    margin-left: 0;
+  }
+
+  /* compact table */
+  table {
+    font-size: 13px;
+  }
+
+  th, td {
+    padding: 8px 6px !important;
+  }
+
+  /* smaller icons */
+  td button {
+    transform: scale(0.9);
+  }
+
+  /* paginator responsive */
+  mat-paginator {
+    font-size: 12px;
+  }
+}
+
+
+/* ================= EXTRA SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+  table {
+    font-size: 12px;
+  }
+
+  th, td {
+    padding: 6px 4px !important;
   }
 }

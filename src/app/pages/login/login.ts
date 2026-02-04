@@ -22,7 +22,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatSnackBarModule,
     MatIconModule,
     MatProgressSpinnerModule,
-    RouterModule
+    RouterModule,
   ],
   templateUrl: './login.html',
   styleUrl: './login.css',
@@ -64,6 +64,8 @@ export class Login {
 
       if (res.length) {
         this.Authservice.saveUser(res[0]);
+
+        const isAdmin = this.Authservice.isAdmin(); //check role
 
         this.snack.open('Login successful ✅', 'Close', { duration: 2000 });
 

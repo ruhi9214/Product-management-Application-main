@@ -11,7 +11,7 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import { Core } from '../../services/core';
 import { Auth } from '../../services/auth'
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 
@@ -28,8 +28,9 @@ import { CommonModule } from '@angular/common';
     MatInputModule,
     MatPaginatorModule,
     MatSortModule,
-    CommonModule
-  ],
+    CommonModule,
+    RouterLink
+],
   templateUrl: './product-list.html',
   styleUrl: './product-list.css',
 })
@@ -123,6 +124,7 @@ export class ProductList implements OnInit {
     this.auth.logout();
     this.router.navigate(['login'])
   }
+
 }
 
 

@@ -24,6 +24,9 @@ export class Auth {
 
           this.saveUser(user);
           this.saveToken(token);
+          
+
+          
         }
       })
       ,
@@ -42,9 +45,30 @@ export class Auth {
         if (res.length) {
           return throwError(() => new Error('User already exists'));
         }
+
+        // default role
+        user.role = 'USER';
+
         return this.http.post(this.api, user);
       })
     );
+  }
+
+  //get user
+   getUser() {
+    return JSON.parse(localStorage.getItem('user') || 'null');
+  }
+
+  getUserId() {
+    return this.getUser()?.id;
+  }
+
+  getRole() {
+    return this.getUser()?.role;
+  }
+
+  isAdmin() {
+    return this.getRole() === 'ADMIN';
   }
 
 

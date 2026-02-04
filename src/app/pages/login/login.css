@@ -71,7 +71,7 @@ button[mat-raised-button] {
   letter-spacing: 0.4px;
 
   background: #6366f1 !important;
-  /* professional indigo */
+  
   color: white !important;
 
   transition: 0.2s;
@@ -118,4 +118,5 @@ mat-form-field.mat-form-field-invalid .mat-input-element {
 
 .full {
   width: 100%;
-}
+} 
+
