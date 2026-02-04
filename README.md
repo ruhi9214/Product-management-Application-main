@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> da613fa8b1cd79a0137dd58c041f27da24aedfdb
 # ProductManagement
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.2.
@@ -58,6 +61,9 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+<<<<<<< HEAD
 =======
 # Product-management-Application
 >>>>>>> 2358c4f6f2f68f0adfbc772a5b7f418ea70772a7
+=======
+>>>>>>> da613fa8b1cd79a0137dd58c041f27da24aedfdb

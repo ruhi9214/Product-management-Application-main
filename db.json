@@ -27,6 +27,15 @@
   ],
   "products": [
     {
+<<<<<<< HEAD
+=======
+      "name": "Hp Laptop",
+      "price": 60000,
+      "category": "Laptophh",
+      "id": "3"
+    },
+    {
+>>>>>>> da613fa8b1cd79a0137dd58c041f27da24aedfdb
       "id": "4",
       "name": "HP Mouse",
       "price": 500,
@@ -43,12 +52,15 @@
       "name": "Samsung",
       "price": "15000",
       "category": "Mobile"
+<<<<<<< HEAD
     },
     {
       "id": "0689",
       "name": "Nothing",
       "price": "30000",
       "category": "Mobile"
+=======
+>>>>>>> da613fa8b1cd79a0137dd58c041f27da24aedfdb
     }
   ]
 }
