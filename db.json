@@ -5,20 +5,20 @@
       "name": "Rohini",
       "email": "test@gmail.com",
       "password": "1234"
+    },
+    {
+      "id": "73ac",
+      "name": "Rohini Phadtare",
+      "email": "rohiniphadtare9202@gmail.com",
+      "password": "123456"
     }
   ],
   "products": [
     {
-      "id": "1",
-      "name": "HP Mouse",
-      "price": 500,
-      "category": "Accessories"
-    },
-    {
-      "id": "2",
-      "name": "Keyboard",
+      "name": "Keyboard Mouse",
       "price": 1200,
-      "category": "Accessories"
+      "category": "Accessories",
+      "id": "2"
     },
     {
       "id": "3",
@@ -30,6 +30,12 @@
       "id": "4",
       "name": "Nothing",
       "price": "30000",
+      "category": "Mobile"
+    },
+    {
+      "id": "3a92",
+      "name": "Iphone 16",
+      "price": "70000",
       "category": "Mobile"
     }
   ]
